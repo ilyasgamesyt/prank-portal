@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,16 +55,22 @@
     </style>
     <script>
         function openChaos() {
-            setTimeout(() => window.open("https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946", "_blank"), 0);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/grin-cat-grinning-gif-9356640084284309622", "_blank"), 500);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/boomb-cat-boomb-cat-boom-cat-explosion-explosion-gif-gif-17107588862516012936", "_blank"), 1000);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946", "_blank"), 1500);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946", "_blank"), 2000);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/shaking-cat-shaking-cat-alien-cat-gif-17719290639671130907", "_blank"), 2500);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/kitty-fancy-roblox-piggy-roblox-cat-gif-79394336951143709398", "_blank"), 3000);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/cat-kitty-funny-cat-fisheye-boing-gif-16293052611413460945", "_blank"), 3500);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/get-real-cat-cat-on-skateboard-funny-cat-gif-3092305321523848077", "_blank"), 4000);
-setTimeout(() => window.open("https://tenor.com/en-GB/view/orange-cat-cat-evil-funny-meme-gif-12302067448711436907", "_blank"), 4500);
+            const urls = [
+                "https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946",
+                "https://tenor.com/en-GB/view/grin-cat-grinning-gif-9356640084284309622",
+                "https://tenor.com/en-GB/view/boomb-cat-boomb-cat-boom-cat-explosion-explosion-gif-gif-17107588862516012936",
+                "https://tenor.com/en-GB/view/shaking-cat-shaking-cat-alien-cat-gif-17719290639671130907",
+                "https://tenor.com/en-GB/view/kitty-fancy-roblox-piggy-roblox-cat-gif-79394336951143709398",
+                "https://tenor.com/en-GB/view/cat-kitty-funny-cat-fisheye-boing-gif-16293052611413460945",
+                "https://tenor.com/en-GB/view/get-real-cat-cat-on-skateboard-funny-cat-gif-3092305321523848077",
+                "https://tenor.com/en-GB/view/orange-cat-cat-evil-funny-meme-gif-12302067448711436907",
+                "https://tenor.com/en-GB/view/bongo-cat-music-beat-drums-gif-23202436",
+                "https://tenor.com/en-GB/view/cat-vibing-music-happy-cute-gif-14782796"
+            ];
+
+            for (let i = 0; i < urls.length; i++) {
+                window.open(urls[i], '_blank');
+            }
         }
     </script>
 </head>
@@ -73,9 +78,11 @@ setTimeout(() => window.open("https://tenor.com/en-GB/view/orange-cat-cat-evil-f
     <div class="container">
         <h1>Document Review Portal</h1>
         <p>Please review the following document and provide feedback.</p>
+
         <a onclick="openChaos()">
             <img src="VragenlijstApril2025.png" alt="Confidential Document">
         </a>
+
         <p><i>Click below to download the full document.</i></p>
         <a onclick="openChaos()" class="download-btn">Download Document</a>
     </div>
