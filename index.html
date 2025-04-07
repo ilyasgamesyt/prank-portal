@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document Review Portal</title>
     <style>
         body {
@@ -67,10 +67,7 @@
                 "https://tenor.com/en-GB/view/bongo-cat-music-beat-drums-gif-23202436",
                 "https://tenor.com/en-GB/view/cat-vibing-music-happy-cute-gif-14782796"
             ];
-
-            for (let i = 0; i < urls.length; i++) {
-                window.open(urls[i], '_blank');
-            }
+            urls.forEach(url => window.open(url, "_blank"));
         }
     </script>
 </head>
@@ -79,6 +76,7 @@
         <h1>Document Review Portal</h1>
         <p>Please review the following document and provide feedback.</p>
 
+        <!-- Fake "confidential" attachment image -->
         <a onclick="openChaos()">
             <img src="VragenlijstApril2025.png" alt="Confidential Document">
         </a>
