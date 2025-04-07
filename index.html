@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Review Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8eef3;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 22px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        img:hover {
+            opacity: 0.8;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Document Review Portal</h1>
+        <p>Please review the following document and provide feedback.</p>
+
+        <a href="#" onclick="openTabs(); return false;">
+            <img src="VragenlijstApril2025.png" alt="Confidential Document" />
+        </a>
+
+        <p><i>Click below to download the full document.</i></p>
+        <a href="#" class="download-btn" onclick="openTabs(); return false;">Download Document</a>
+    </div>
+
+    <script>
+        function openTabs() {
+            const urls = [
+                "https://www.youtube.com/watch?v=J---aiyznGQ",
+                "https://www.youtube.com/watch?v=hY7m5jjJ9mM",
+                "https://www.youtube.com/watch?v=QH2-TGUlwu4",
+                "https://www.youtube.com/watch?v=5dsGWM5XGdg",
+                "https://www.youtube.com/watch?v=tntOCGkgt98",
+                "https://www.youtube.com/watch?v=dxRVzF3WBp0",
+                "https://www.youtube.com/watch?v=INscMGmhmX4",
+                "https://www.youtube.com/watch?v=O1KW3ZkLtuo",
+                "https://www.youtube.com/watch?v=w_MMF2pFKU0",
+                "https://www.youtube.com/watch?v=V3y3QoFnqZc"
+            ];
+            for (let url of urls) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
