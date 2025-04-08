@@ -1,150 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Document Review Portal</title>
-<style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Review Portal</title>
+  <style>
     body {
-
       font-family: Arial, sans-serif;
-
       background-color: #e8eef3;
-
       text-align: center;
-
       padding: 50px;
-
     }
-
     .container {
-
       background: white;
-
       padding: 20px;
-
       border-radius: 8px;
-
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-
       display: inline-block;
-
       text-align: left;
-
     }
-
     h1 {
-
       color: #2c3e50;
-
       font-size: 22px;
-
     }
-
     p {
-
       color: #555;
-
       font-size: 16px;
-
     }
-
     img {
-
       width: 100%;
-
       max-width: 600px;
-
       border-radius: 5px;
-
       transition: 0.3s ease;
-
       margin-bottom: 15px;
-
       cursor: pointer;
-
     }
-
     img:hover {
-
       opacity: 0.8;
-
     }
-
     .download-btn {
-
       display: inline-block;
-
       padding: 10px 20px;
-
       font-size: 16px;
-
       color: white;
-
       background-color: #3498db;
-
       text-decoration: none;
-
       border-radius: 5px;
-
       transition: background 0.3s ease;
-
       cursor: pointer;
-
     }
-
     .download-btn:hover {
-
       background-color: #2980b9;
-
     }
-</style>
+  </style>
+  <script>
+    function openChaos() {
+      const urls = [
+        "https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946",
+        "https://tenor.com/en-GB/view/grin-cat-grinning-gif-9356640084284309622",
+        "https://tenor.com/en-GB/view/boomb-cat-boomb-cat-boom-cat-explosion-explosion-gif-gif-17107588862516012936",
+        "https://tenor.com/en-GB/view/shaking-cat-shaking-cat-alien-cat-gif-17719290639671130907",
+        "https://tenor.com/en-GB/view/kitty-fancy-roblox-piggy-roblox-cat-gif-79394336951143709398",
+        "https://tenor.com/en-GB/view/cat-kitty-funny-cat-fisheye-boing-gif-16293052611413460945",
+        "https://tenor.com/en-GB/view/get-real-cat-cat-on-skateboard-funny-cat-gif-3092305321523848077",
+        "https://tenor.com/en-GB/view/orange-cat-cat-evil-funny-meme-gif-12302067448711436907",
+        "https://tenor.com/en-GB/view/bongo-cat-music-beat-drums-gif-23202436",
+        "https://tenor.com/en-GB/view/cat-vibing-music-happy-cute-gif-14782796"
+      ];
+      urls.forEach(url => window.open(url, "_blank"));
+
+      // Play the goofy ahh car horn
+      const audio = new Audio("https://www.myinstants.com/media/sounds/goofy-ahh-car-horn.mp3");
+      audio.play();
+    }
+  </script>
 </head>
 <body>
-<div class="container">
-<h1>Document Review Portal</h1>
-<p>Please review the following document and provide feedback.</p>
-<a onclick="openChaos()">
-<img src="VragenlijstApril2025.png" alt="Confidential Document">
-</a>
-<p><i>Click below to download the full document.</i></p>
-<a onclick="openChaos()" class="download-btn">Download Document</a>
-</div>
- 
-  <script>
+  <div class="container">
+    <h1>Document Review Portal</h1>
+    <p>Please review the following document and provide feedback.</p>
 
-    function openChaos() {
+    <!-- Fake attachment image -->
+    <a onclick="openChaos()">
+      <img src="VragenlijstApril2025.png" alt="Confidential Document">
+    </a>
 
-      // Directe audio-link (moet gebruikersinteractie zijn)
-
-      let audio = new Audio('https://www.myinstants.com/media/sounds/goofy-ahh-sound-effect.mp3');
-
-      audio.play();
- 
-      // Open 10 links, direct en zonder loop
-
-      window.open("https://tenor.com/en-GB/view/cat-couple-cute-gif-25659946", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/grin-cat-grinning-gif-9356640084284309622", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/boomb-cat-boomb-cat-boom-cat-explosion-explosion-gif-gif-17107588862516012936", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/shaking-cat-shaking-cat-alien-cat-gif-17719290639671130907", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/kitty-fancy-roblox-piggy-roblox-cat-gif-79394336951143709398", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/cat-kitty-funny-cat-fisheye-boing-gif-16293052611413460945", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/get-real-cat-cat-on-skateboard-funny-cat-gif-3092305321523848077", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/orange-cat-cat-evil-funny-meme-gif-12302067448711436907", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/bongo-cat-music-beat-drums-gif-23202436", "_blank");
-
-      window.open("https://tenor.com/en-GB/view/cat-vibing-music-happy-cute-gif-14782796", "_blank");
-
-    }
-</script>
+    <p><i>Click below to download the full document.</i></p>
+    <a onclick="openChaos()" class="download-btn">Download Document</a>
+  </div>
 </body>
 </html>
